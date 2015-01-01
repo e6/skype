@@ -9,7 +9,7 @@ RUN useradd skype -s /bin/bash -m
 
 ## Set timezone
 #
-RUN echo "America/New_York" > /etc/timezone && \
+RUN echo "America/Chicago" > /etc/timezone && \
     dpkg-reconfigure -f noninteractive tzdata
 
 CMD sudo skype -c skype
